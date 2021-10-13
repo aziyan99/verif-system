@@ -73,8 +73,8 @@ require './vendors/phpmailer/src/SMTP.php';
                     $mail->isHTML(true);                                  // Set email format to HTML
 
                     $mail->Subject = 'Email verification';
-                    $mail->Body    = '<a href="http://verif-system.test/login.php?token=' . $token . '">verification link</a>';
-                    $mail->AltBody = '"http://verif-system.test/login.php?token=' . $token . '"';
+                    $mail->Body    = '<a href="https://calm-dusk-87412.herokuapp.com/login.php?token=' . $token . '">verification link</a>';
+                    $mail->AltBody = '"https://calm-dusk-87412.herokuapp.com/login.php?token=' . $token . '"';
 
                     if (!$mail->send()) {
                         $message = "Error during regsitration please try again!";
